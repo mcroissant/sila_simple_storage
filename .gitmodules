@@ -1,0 +1,3 @@
+[submodule "sila_java"]
+	path = sila_java
+	url = https://gitlab.com/SiLA2/sila_java.git

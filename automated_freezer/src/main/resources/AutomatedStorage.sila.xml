@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="0.1" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_base/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>AutomatedStorage</Identifier>
+    <DisplayName>Automated Storage</DisplayName>
+    <Description>Feature allowing to interact with automated storage remote controls</Description>
+    <Command>
+        <Identifier>StoreRackWithNoContentCheck</Identifier>
+        <DisplayName>Store Rack without checking content</DisplayName>
+        <Description>Store a rack without checking for its content in term of mapping of tubes position</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>RackBarcode</Identifier>
+            <DisplayName>Rack Barcode</DisplayName>
+            <Description>The barcode of the rack that will be inserted into the automated freezer</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+    </Command>
+</Feature>

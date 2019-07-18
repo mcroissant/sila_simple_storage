@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="0.1" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_base/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>GreetingProvider</Identifier>
+    <DisplayName>Greeting Provider</DisplayName>
+    <Description>Minimum Feature Definition as example. Provides a Greeting</Description>
+    <Command>
+        <Identifier>SayHello</Identifier>
+        <DisplayName>Say Hello</DisplayName>
+        <Description>Does what it says</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Name</Identifier>
+            <DisplayName>Name</DisplayName>
+            <Description>Your Name</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Greeting</Identifier>
+            <DisplayName>Greeting</DisplayName>
+            <Description>The greeting coming back at you</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Property>
+        <Identifier>StartYear</Identifier>
+        <DisplayName>Start Year</DisplayName>
+        <Description>The year the server has been started</Description>
+        <DataType>
+            <Basic>Integer</Basic>
+        </DataType>
+        <Observable>No</Observable>
+    </Property>
+</Feature>
